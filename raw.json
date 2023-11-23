@@ -1,0 +1,40 @@
+{
+    "receiver": "webhook",
+    "status": "firing",
+    "alerts": [
+        {
+            "status": "firing",
+            "labels": {
+                "alertname": "HostDead",
+                "instance": "192.168.1.100:9100",
+                "job": "node",
+                "severity": "critical"
+            },
+            "annotations": {
+                "description": "主机可能存在故障或node_exporter异常退出。",
+                "summary": "主机 192.168.1.100:9100 不可达"
+            },
+            "startsAt": "2023-10-12T12:58:10.979Z",
+            "endsAt": "0001-01-01T00:00:00Z",
+            "generatorURL": "http://prometheus:9090/graph?g0.expr=up+%3D%3D+0&g0.tab=1",
+            "fingerprint": "099f4920aa63877d"
+        }
+    ],
+    "groupLabels": {
+        "alertname": "HostDead"
+    },
+    "commonLabels": {
+        "alertname": "HostDead",
+        "instance": "192.168.1.100:9100",
+        "job": "node",
+        "severity": "critical"
+    },
+    "commonAnnotations": {
+        "description": "主机可能存在故障或node_exporter异常退出。",
+        "summary": "主机 192.168.1.100:9100 不可达"
+    },
+    "externalURL": "http://814fd375eb50:9093",
+    "version": "4",
+    "groupKey": "{}:{alertname=\"HostDead\"}",
+    "truncatedAlerts": 0
+}
